@@ -1,0 +1,42 @@
+- Difference between list and Tuples
+    List are not static
+        We can add elements and remove elements from list. Meaning they are Mutable
+    Tuples are the opposite
+        They are immutable. They cannot change. 
+
+Reassignment and Immutability
+Use lists when you need to change your data or append more items.
+
+Because tuples are immutable, they can't be altered. That means they aren't the right choice 
+when you need to loop over data and append it to a data structure.
+
+Variable size
+Use tuples when your data is fixed and pre-determined.
+
+Lists are variable in size, meaning you can always add or remove items from them. That's why 
+lists are the right choice when you don't know their contents ahead of time.
+
+Tuples can't be added to, so you need to know their contents ahead of time. They are a good
+ choice if you have a fixed set of data.
+
+Homogeneous vs Heterogeneous Content
+Use tuples for heterogeneous data and lists for homogeneous data
+
+Tuples are often used to store heterogeneous data. This meaning, if you have a mix of types, 
+you'd probably use a tuple. Lists, however, are mostly used when you have homogeneous data - 
+when all your data is of the same type.
+
+This is a semantic difference, and is not something that would impact the functionality of
+ your code. It is a common use case, though. That's because lists are commonly used when you
+  want to loop over data and perform an action on each item. That's easy to do without error
+   if all items in a list are of the same type.
+
+Tuples, on the other hand, are fixed and created with pre-determined data. This means tuples
+ can follow a "schema" that describes something. See the following example
+
+Efficiency
+Use tuples for faster and more efficient access.
+
+Because tuples are immutable, they are accessed more quickly and are more memory efficient 
+than lists. This means that, as long as you know your data isn't going to change, a tuple 
+is the more performant choice.
