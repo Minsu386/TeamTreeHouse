@@ -4,7 +4,7 @@ const peopleList = document.getElementById('people');
 const btn = document.querySelector('button');
 
 function getJSON(url) {
-  return new Promise((resolve, reject => {
+  return new Promise((resolve, reject) => {
     const xhr = new XMLHttpRequest();
   xhr.open('GET', url);
   xhr.onload = () => {
@@ -17,7 +17,7 @@ function getJSON(url) {
   };
   xhr.onerror = () => reject( Error('A network error occured'));
   xhr.send();
-  });  
+  }));  
 }
 
 function getProfiles(json) {
